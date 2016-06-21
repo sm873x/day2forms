@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Force User Signup Page</title>
+
+        <style>
+            fieldset {
+                display: inline;
+                vertical-align: top;
+                margin-left: 50px;
+            }
+            div label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 2px;
+            }
+            .radio{
+                display: inline;
+                font-weight: normal;
+            }
+            div {
+                margin-bottom: 1em;
+            }
+            textarea {
+                width: 300px;
+                height: 100px;
+            }
+            .button {
+                background: #8facf6;
+                border-radius: 5px;
+            }
+            footer {
+                font-size: 15px;
+                margin-top: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <form action='http://requestb.in/1l2105r1' method='POST'>
+
+        <header>
+            <h1>Force User Signup Page</h1>
+        </header>
+
+        <main>
+            <fieldset class='basic'>
+
+                <legend>Basic Info</legend>
+
+                <div>
+                        <label for='user-name'>Full Name</label>
+                        <input type='text' class='selection' id='user-name' name='user' required>
+                </div>
+
+                <div>
+                        <label for='profile-pic'>Profile Pic</label>
+                        <input type='file' class='selection' id='profile-pic' name='pic'>
+                </div>
+
+                <div>
+                        <label for='email'>Email</label>
+                        <input type='email' id='email' name='email' placeholder='luke@sky.com' required>
+                </div>
+
+                <div>
+                    <label>Side:</label>
+                        <div>
+                            <input type='radio' name='side' value='light'>
+                            <label for='side-light' class='radio'>Light</label>
+
+                            <input type='radio' name='side' value='dark'>
+                            <label for='side-dark' class='radio'>Dark</label>
+                        </div>
+                </div>
+
+                <div>
+                    <label for='origin'>Origin Story</label>
+                    <textarea id='origin' for='origin' name='origin' required></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset class='abilities'>
+
+                <legend>Abilities</legend>
+
+                <div>
+                    <label>Lightsaber Color</label>
+                    <select>
+                        <option value="Green">Green</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for='levitate'>How many objects can you levitate at once?<label>
+                    <input type='number' name='objects' id='levitate' min='0'>
+                </div>
+
+                <div>
+                    <label for='ability'>Favorite Ability</label>
+                    <input type='text' name='ability' id='ability' placeholder="precognition">
+                </div>
+
+                <div>
+                    <label>Pilot Experience</label>
+                    <input type='checkbox' name='pilot' value='Speeder'>Speeder
+                    <input type='checkbox' name='pilot' value='Transport'>Transport
+                    <input type='checkbox' name='pilot' value='X-wing'>X-wing
+                    <input type='checkbox' name='pilot' value='TIE-Fighter'>TIE Fighter
+                    <input type='checkbox' name='pilot' value='Starship'>Starship
+                    <input type='checkbox' name='pilot' value='Bantha'>Bantha
+                </div>
+
+            </fieldset>
+
+            <fieldset class='application'>
+
+                <legend>Application Info</legend>
+
+                <div>
+                    <label>Desired Mentor</label>
+                    <input type='text' id='mentor' name='mentor' placeholder='Yoda'>
+                </div>
+
+                <div>
+                    <label>Application Date</label>
+                    <input type='date' id='application-date' name='appdate' required>
+                </div>
+
+                <div>
+                    <label>Application Password</label>
+                    <input type='password' id='password' name='password' required>
+                </div>
+
+                <div>
+                    <label>How do you get to the dark side?<label>
+                    <textarea id='how-dark' for='how-dark' name='how-dark'></textarea>
+                </div>
+
+                <div>
+                    <input type='reset' value='Start Over' class='button'>
+                    <input type='submit' value='Submit' class='button'>
+                <div>
+
+            </fieldset>
+        <main>
+
+        <footer>&copy;2016 The Republic</footer>
+
+    </body>
+</html>
