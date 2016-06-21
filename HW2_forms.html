@@ -4,10 +4,20 @@
         <title>Force User Signup Page</title>
 
         <style>
+            main {
+                margin-left: 50px;
+            }
             fieldset {
                 display: inline;
                 vertical-align: top;
-                margin-left: 50px;
+                width: 0;
+            }
+            input[type="text"]
+            {
+                width: 300px;
+            }
+            input[type='email'] {
+                width: 300px;
             }
             div label {
                 display: block;
@@ -29,9 +39,10 @@
                 background: #8facf6;
                 border-radius: 5px;
             }
-            footer {
+            footer p {
                 font-size: 15px;
                 margin-top: 2em;
+
             }
         </style>
     </head>
@@ -49,12 +60,12 @@
 
                 <div>
                         <label for='user-name'>Full Name</label>
-                        <input type='text' class='selection' id='user-name' name='user' required>
+                        <input type='text' id='user-name' name='user' required>
                 </div>
 
                 <div>
                         <label for='profile-pic'>Profile Pic</label>
-                        <input type='file' class='selection' id='profile-pic' name='pic'>
+                        <input type='file' id='profile-pic' name='pic'>
                 </div>
 
                 <div>
@@ -147,7 +158,9 @@
             </fieldset>
         <main>
 
-        <footer>&copy;2016 The Republic</footer>
+        <footer>
+            <p>&copy;2016 The Republic</p>
+        </footer>
 
     </body>
 </html>
